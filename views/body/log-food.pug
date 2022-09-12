@@ -1,0 +1,29 @@
+extends ../base
+
+block content
+  main.main
+    form.form-container
+      div
+        label Date
+        input.form-input(type="date" id='date' required)
+      div
+        label Calories
+        input.form-input(type="number" id='calories' required)
+      div
+        label Carbs
+        input.form-input(type="number" id='carbs')
+      div
+        label Fat
+        input.form-input(type="number" id='fat')
+      div
+        label Protein
+        input.form-input(type="number" id='protein')
+      div
+        input.form-submit(type="submit" id='food')
+    div
+      p bread - 100, 3 egg - 200
+      p bacon - 120, avocado - 240
+      p banana - 100
+      p rice noodles - 360/100g, tofu block - 336
+      p thighs/drumsticks - 190/100g
+      p potatoes - 77/100g

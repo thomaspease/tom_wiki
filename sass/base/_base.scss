@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  background-color: #f7f7f7;
+  color: #777;
+  min-height: 100vh;
+  height: 100%;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ma-bt-md {
+  margin-bottom: 3rem !important;
+}
+
+.ma-bt-lg {
+  margin-bottom: 3.5rem !important;
+}
+
+.ma-tp-md {
+  margin-top: 3rem !important;
+}
+
+.ma-tp-sm {
+  margin-top: 0.5rem !important;
+}

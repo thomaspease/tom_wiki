@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "watch:sass": "node-sass ./sass/main.scss ./public/css/comp.css -w"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,12 @@
     "mongoose": "^6.5.2",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.19",
+    "path": "^0.12.7",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
     "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3"
   }
 }

@@ -1,0 +1,12 @@
+.side {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.side__el {
+  height: 10rem;
+  justify-items: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: black;
+}
