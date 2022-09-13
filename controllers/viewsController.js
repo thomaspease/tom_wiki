@@ -29,3 +29,9 @@ exports.displayLogExercise = catchAsync(async (req, res, next) => {
     title: "Log exercise",
   })
 })
+
+exports.displayTodos = catchAsync(async (req, res, next) => {
+  res.status(200).render("todos", {
+    title: "Todos",
+  })
+})
