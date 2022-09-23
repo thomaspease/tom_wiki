@@ -1,7 +1,10 @@
 const mongoose = require("mongoose")
 
 const foodSchema = mongoose.Schema({
-  date: Date,
+  date: {
+    type: Date,
+    required: true,
+  },
   calories: Number,
   fat: Number,
   protein: Number,

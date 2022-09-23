@@ -6,6 +6,7 @@ function displayMessage(type, msg) {
   }, 3000)
 }
 
+//Prep Date
 var d = new Date()
 var month = d.getMonth() + 1
 var day = d.getDate()
@@ -18,7 +19,17 @@ var dateStr =
   (day < 10 ? "0" : "") +
   day
 
+// //TAGGING
+// var themeInput = document.querySelector("input[name=themeInput]")
+// var peopleInput = document.querySelector("input[name=peopleInput]")
+// var authorInput = document.querySelector("input[name=authorInput]")
+
+// tagify = (input) => {
+//   new Tagify(input, { whitelist: ["brains", "more brains"] })
+// }
+
 $(document).ready(function () {
+  //FORM SUBMISSION
   $("#date").val(dateStr)
 
   $("form").submit(function (event) {

@@ -1,7 +1,10 @@
 const mongoose = require("mongoose")
 
 const measurementSchema = mongoose.Schema({
-  date: Date,
+  date: {
+    type: Date,
+    required: true,
+  },
   weight: Number,
   bicep: Number,
   shoulder: Number,

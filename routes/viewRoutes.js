@@ -9,5 +9,6 @@ router.get("/body", viewsController.displayBodyHome)
 router.get("/body/log/food", viewsController.displayLogFood)
 router.get("/body/log/measurement", viewsController.displayLogMeasurement)
 router.get("/body/log/exercise", viewsController.displayLogExercise)
+router.get("/wiki/log", viewsController.displayLogWiki)
 
 module.exports = router

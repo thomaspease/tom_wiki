@@ -1,4 +1,5 @@
 const catchAsync = require("../utils/catchAsync")
+const Person = require("../models/personmodel")
 
 exports.displayHome = catchAsync(async (req, res, next) => {
   res.status(200).render("base", {
@@ -33,5 +34,17 @@ exports.displayLogExercise = catchAsync(async (req, res, next) => {
 exports.displayTodos = catchAsync(async (req, res, next) => {
   res.status(200).render("todos", {
     title: "Todos",
+  })
+})
+
+exports.displayLogWiki = catchAsync(async (req, res, next) => {
+  const thing = await Person.find()
+  const people = thing.forEach((el) => el.name)
+
+  console.log(people)
+
+  res.status(200).render("wiki/wiki-input", {
+    title: "Wiki input",
+    people,
   })
 })

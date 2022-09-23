@@ -1,7 +1,10 @@
 const mongoose = require("mongoose")
 
 const exerciseSchema = mongoose.Schema({
-  date: Date,
+  date: {
+    type: Date,
+    required: true,
+  },
   exercise: Number,
   weight: Number,
   reps: Number,

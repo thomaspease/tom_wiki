@@ -1,0 +1,10 @@
+extends ../base
+
+block content
+  main.main
+    form.form-container
+      div
+        label Tag 
+        input(name='themeInput')
+        script.
+          new Tagify(document.querySelector("input[name=themeInput]"), {whitelist: ["brains", "more brains"]})
